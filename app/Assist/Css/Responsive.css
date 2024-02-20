@@ -1,0 +1,292 @@
+@media (max-width:1240px) {
+    .order-placement-page {
+        height: 100%;
+
+    }
+
+    .order-placement-page .order-confirmation {
+        width: 50%;
+    }
+    .Dashboard-page .react-tabs {
+        height: 100%;
+    }
+}
+
+
+
+
+@media (max-width:992px) {
+
+    /* dashboard */
+    .Dashboard-page .add-balance-setion {
+        height: 100%;
+    }
+
+    .Dashboard-page .react-tabs {
+        height: 100%;
+       
+       
+    }
+    .Dashboard-page .content-table{
+        width:100%;
+        overflow-x:scroll;
+    }
+    .Dashboard-page .content-table table{
+        width:100%;
+        overflow-x: scroll;
+    }
+    /* dashboard */
+
+    .Dashboard-page .left-sitebar {
+        width: 30% !important;
+        gap: 40px;
+        background-color:green;
+    }
+    .Dashboard-page .add-balance-setion h3 {
+        font-size: 26px !important;
+    }
+
+    .navbar-area nav ul {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .Support-page .items {
+        width: 35%;
+    }
+
+
+    table tr td:first-child {
+        width: 50%;
+        padding-right: 25px;
+    }
+
+    .order-placement-page .order-confirmation {
+        width: 60%;
+    }
+
+    .login-area .forgot-password {
+        width: 50%;
+        padding: 45px 25px;
+
+    }
+
+    .login-area .login-content-box {
+        width: 60%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:768px) {
+
+    .navbar-area nav {
+        display: none;
+    }
+
+    .navbar-area {
+        position: relative !important;
+    }
+
+    .navbar-area .bars {
+        display: block;
+    }
+
+    .mobile-nav {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: rgb(171, 64, 64);
+        z-index: 99999;
+    }
+
+    .mobile-nav ul {
+        width: 100%;
+        padding: 50px 0;
+        background-color: white;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 0px 5px purple;
+    }
+
+    .mobile-nav ul li {
+        display: flex;
+        margin: 5opx 0;
+        padding: 7px 0;
+        margin: 10px 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mobile-nav ul a {
+        color: black;
+    }
+
+    .mobile-nav ul li svg {
+        text-align: center;
+    }
+
+    .banner-section h2 {
+        font-size: 32px;
+    }
+
+    .order-placement-page .order-confirmation {
+        width: 80%;
+    }
+
+    .order-placement-page form input {
+        padding: 10px;
+    }
+
+    .ResetPassword {
+        height: 100%;
+    }
+
+    .login-area .forgot-password {
+        width: 70%;
+        padding: 45px 25px;
+
+    }
+
+    .login-area .forgot-password h4 {
+        font-size: 24px;
+    }
+
+    .login-area .login-content-box {
+        width: 75%;
+    }
+
+    .login-area h3 {
+        font-size: 24px;
+        margin-top: 25px;
+    }
+
+
+    .Support-page .items {
+        width: 45%;
+    }
+
+
+    /* home page tabs */
+    .react-tabs__tab {
+        font-size: 18px;
+    }
+
+
+
+    /* dashboard */
+     .Dashboard-page .left-sitebar {
+        width: 35% !important;
+        gap: 30px;
+        height:100%;
+    }
+    .Dashboard-page .add-balance-setion h3 {
+        font-size: 20px !important;
+        font-weight: 600;
+    }
+
+    .Dashboard-page .add-balance {
+        width: 70%;
+    }
+}
+
+
+
+
+@media (max-width:576px) {
+
+    .banner-section h2 {
+        font-size: 24px;
+    }
+
+    h2,
+    h3 {
+        font-size: 24px !important;
+    }
+
+    table tr td {
+        font-size: 15px;
+    }
+
+    .slider-area .items img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+
+
+    .login-area .forgot-password {
+        width: 90%;
+        padding: 45px 25px;
+
+    }
+
+    .login-area .forgot-password h4 {
+        font-size: 20px;
+    }
+
+    .login-area .login-content-box {
+        width: 96%;
+        padding: 15px;
+    }
+
+    form label {
+        font-size: 13px;
+    }
+
+    .login-area form p {
+        font-size: 13px;
+    }
+
+    /* home page tabs */
+    .react-tabs__tab {
+        font-size: 13px;
+    }
+
+    table tr td {
+        width: fit-content !important;
+    }
+
+    .Support-page {
+        height: 100%;
+        padding: 50px 0;
+    }
+
+    .Support-page .content-box {
+        display: block;
+    }
+
+    .Support-page .items {
+        width: 90%;
+        margin: 15px auto;
+    }
+
+    .Support-page .items h3 {
+        font-size: 20px;
+    }
+
+    .Dashboard-page .add-balance {
+        width: 90%;
+    }
+
+     .Dashboard-page .left-sitebar {
+        width: 40% !important;
+        gap: 30px;
+        height:100%;
+    }
+    .Dashboard-page .add-balance label {
+        font-weight: 600;
+    }
+
+}
