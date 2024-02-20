@@ -205,11 +205,11 @@ export const OrderDetails = [
 // transation history data list
 
 export const TransactionHeading = [
-    '',	'DETAILS',	'PRICE',	'MOBILE',	'STATUS',	'TIME'
+    'DETAILS',	'PRICE',	'MOBILE',	'STATUS',	'TIME'
 ]
 export const TransactionsDetails = [
     {
-       id:"",	
+       
        details:'you have bought an Offer',	
        price:'350Tk',	
        Phone:'013264669',	
@@ -217,7 +217,7 @@ export const TransactionsDetails = [
        time:'02-02-2024'
     },
     {
-       id:"",	
+       
        details:'You have Added 250 Tk',	
        price:'650Tk',	
        Phone:'013264399',	

@@ -7,6 +7,7 @@
     .order-placement-page .order-confirmation {
         width: 50%;
     }
+
     .Dashboard-page .react-tabs {
         height: 100%;
     }
@@ -24,24 +25,27 @@
 
     .Dashboard-page .react-tabs {
         height: 100%;
-       
-       
+
+
     }
-    .Dashboard-page .content-table{
-        width:100%;
-        overflow-x:scroll;
-    }
-    .Dashboard-page .content-table table{
-        width:100%;
+
+    .Dashboard-page .content-table {
+        width: 100%;
         overflow-x: scroll;
     }
+
+    .Dashboard-page .content-table table {
+        width: 100%;
+        overflow-x: scroll;
+    }
+
     /* dashboard */
 
     .Dashboard-page .left-sitebar {
         width: 30% !important;
         gap: 40px;
-        background-color:green;
     }
+
     .Dashboard-page .add-balance-setion h3 {
         font-size: 26px !important;
     }
@@ -185,11 +189,12 @@
 
 
     /* dashboard */
-     .Dashboard-page .left-sitebar {
-        width: 35% !important;
+    .Dashboard-page .left-sitebar {
+        width: 0;
         gap: 30px;
-        height:100%;
+        height: 100%;
     }
+
     .Dashboard-page .add-balance-setion h3 {
         font-size: 20px !important;
         font-weight: 600;
@@ -280,13 +285,41 @@
         width: 90%;
     }
 
-     .Dashboard-page .left-sitebar {
+    /* .Dashboard-page .left-sitebar {
         width: 40% !important;
         gap: 30px;
         height:100%;
-    }
+    } */
     .Dashboard-page .add-balance label {
         font-weight: 600;
+    }
+
+    .Dashboard-page .react-tabs__tab {
+        font-size: 12px;
+    }
+
+    .Dashboard-page .page-title h3 {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .Dashboard-page .profile svg {
+        font-size: 24px;
+    }
+    .Dashboard-page .profile .flex{
+        flex-wrap:wrap;
+    }
+    .Dashboard-page .heading p {
+        font-size: 14px;
+    }
+
+    .Dashboard-page .heading h6 {
+        font-size: 14px;
+    }
+
+
+    footer p {
+        font-size: 14px;
     }
 
 }

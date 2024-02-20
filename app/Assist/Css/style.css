@@ -206,8 +206,9 @@ h6 {
 }
 
 .selling-table {
-    width: 90%;
+    width: 95%;
     margin: 15px auto;
+    overflow: hidden;
 }
 
 .selling-table h3 {
@@ -223,8 +224,9 @@ h6 {
 
 /* data table */
 table {
-    width: fit-content;
+    width: 100%;
     margin: 0 auto;
+    table-layout: fixed;
     background-color: white;
     transition-duration: .9s;
     transition: 2s !important;
@@ -232,7 +234,7 @@ table {
     -moz-transition: 2s !important;
     -ms-transition: 2s !important;
     -o-transition: 2s !important;
-    overflow-x: scroll;
+    overflow: scroll;
 }
 
 table tr {
@@ -258,6 +260,7 @@ table tr td {
     gap: 5px;
     padding: 5px 14px;
     margin: 10px 0 !important;
+
 }
 
 table tr td:first-child {
@@ -316,11 +319,11 @@ table tr td a button {
     padding: 75px 0;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, .3);
     margin: 50px 0;
-    overflow-x: auto;
+    overflow: hidden;
 }
 
 .offer-list-section {
-    width: 92%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -332,6 +335,12 @@ table tr td a button {
     padding: 25px 0;
     margin: 35px 0;
 }
+
+.offer-section table {
+    overflow-x: scroll !important;
+}
+
+
 
 
 
@@ -578,6 +587,14 @@ footer {
 
 /* dashboard page */
 
+.Dashboard-page {}
+
+.Dashboard-page .main-content {
+    display: flex;
+}
+
+.Dashboard-page .react-tabs {}
+
 .Dashboard-page .react-tabs {
     width: 100%;
     height: 100vh;
@@ -585,17 +602,55 @@ footer {
     justify-content: space-between;
 }
 
-.Dashboard-page .dashboard-page-heading {
+.Dashboard-page .right-sidebar-content {
     width: 100%;
-    background-color: red;
 }
+
+.Dashboard-page .dashboard-heading {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.Dashboard-page .heading {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Dashboard-page .heading .profile {
+    display: flex;
+    gap: 20px;
+}
+
+.Dashboard-page .profile svg {
+    font-size: 30px;
+}
+
+.Dashboard-page .heading p {
+    font-size: 18px;
+}
+
+.Dashboard-page .heading p span {
+    font-weight: 600;
+}
+
+.Dashboard-page .heading h6 {
+    font-size: 18px;
+}
+
+
 
 .Dashboard-page .left-sitebar {
     width: 25%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 40px;
+    position: sticky;
+    top: 0;
     background-color: white;
     box-shadow: 0px 0px 5px rgba(128, 0, 128, 0.496);
 }
@@ -615,7 +670,8 @@ footer {
     font-size: 16px;
     text-align: left;
 }
-.Dashboard-page .react-tabs__tab svg{
+
+.Dashboard-page .react-tabs__tab svg {
     font-size: 18px;
 }
 
@@ -623,7 +679,8 @@ footer {
     border: none !important;
     display: flex;
     gap: 15px;
-    margin-top: 50px;
+    margin-top: 30px;
+    margin-bottom: 50px;
     flex-direction: column;
     align-items: center;
 
@@ -635,12 +692,10 @@ footer {
     display: none;
 }
 
-.Dashboard-page .react-tabs__tab-panel--selected {
-    width: 100%;
-}
+
 
 .Dashboard-page table {
-    overflow-x: auto;
+    overflow-x: scroll;
 }
 
 .Dashboard-page .add-balance-setion {
@@ -696,30 +751,10 @@ footer {
 
 .Dashboard-page .content-table {
     width: 100%;
-    overflow-x: scroll;
+    overflow: hidden;
+}
+.Dashboard-page .page-title h3{
+   font-size:28px;
 }
 
-.Dashboard-page .dashboard-topbar {
-    margin: 0 auto;
-    padding: 15px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
 
-.Dashboard-page .dashboard-topbar .profile {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    justify-content: space-between;
-}
-
-.Dashboard-page .dashboard-topbar .profile svg {
-    font-size: 34px;
-}
-
-.Dashboard-page .dashboard-topbar svg {
-    cursor: pointer;
-    font-size: 22px;
-}

@@ -11,8 +11,7 @@ export default function  Table({thead, tbody, offer}) {
 
 
   return (
-    <table  className='table-auto' data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom">
+    <table>
         <thead>
             <tr key="">
                 {

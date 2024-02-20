@@ -25,8 +25,7 @@ export default function DashboardTable({thead, tbody}) {
   return (
    <div>
         {
-            thead ? <table  className='table-auto' data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom">
+            thead ? <table  className='table'>
         <thead>
             <tr key="">
                 {
@@ -44,7 +43,9 @@ export default function DashboardTable({thead, tbody}) {
                 const {id,details, price,Phone,status, time} = items;
                     return(
                         <tr key={i}>
-                            <td>{id}</td>
+                            {
+                                id ? <td>{id}</td> : null
+                            }
                             <td>{details}</td>
                             <td>{price}</td>
                             <td>{Phone}</td>

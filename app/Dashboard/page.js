@@ -16,6 +16,7 @@ import { IoLogOut } from "react-icons/io5";
 import { FaShoppingCart } from "react-icons/fa";
 import Topbar from './Common/Topbar';
 import { IoMdNotifications } from "react-icons/io";
+import Footer from '../Components/Footer';
 
 
 
@@ -24,7 +25,6 @@ export default function page() {
   const [openSidebar, setSidebar] = useState(true)
 
   const handleSidebar = () => {
-    console.log("handlesidebar clicked..!", setSidebar);
     setSidebar(!openSidebar);
   }
 
@@ -49,41 +49,35 @@ export default function page() {
               </div> : null
 
             }
+            <section className="right-sidebar-content">
+              <div className="dashboard-heading">
+                  <Topbar  handleSidebar={handleSidebar} />
+              </div>
             <TabPanel>
-              <section>
-                <Topbar title={'Order History'} handleSidebar={handleSidebar} />
-                <DeshboardContent theading={OrderData} tbody={OrderDetails} />
-              </section>
+               <DeshboardContent theading={OrderData} title={"Orders"} tbody={OrderDetails} />
             </TabPanel>
 
             <TabPanel>
-
             </TabPanel>
 
             <TabPanel>
-              <section className="notificaton-page">
-                <Topbar title={"Notifications"} handleSidebar={handleSidebar} />
-                <DeshboardContent notice={"hello js world"} />
-              </section>
+                <DeshboardContent  title={"Notifications"} />
             </TabPanel>
 
             <TabPanel>
-              <section className="add-balance-setion">
-                <Topbar handleSidebar={handleSidebar} />
                 <AddBalance />
-              </section>
             </TabPanel>
 
             <TabPanel>
-              <section>
-                <Topbar title={"Transaction History"} handleSidebar={handleSidebar} />
-                <DeshboardContent theading={TransactionHeading} tbody={TransactionsDetails} />
-              </section>
+                  <DeshboardContent theading={TransactionHeading} tbody={TransactionsDetails} title={"Transaction history"} />
             </TabPanel>
 
             <TabPanel>
-              logout page
             </TabPanel>
+
+
+            <Footer />
+            </section>
           </Tabs>
         </div>
       </div>
@@ -91,3 +85,54 @@ export default function page() {
   )
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//  <TabPanel>
+//                 {/* <Topbar title={'Order History'} handleSidebar={handleSidebar} /> */}
+//               <section>
+//                 <DeshboardContent theading={OrderData} tbody={OrderDetails} />
+//               </section>
+//             </TabPanel>
+
+//             <TabPanel>
+
+//             </TabPanel>
+
+//             <TabPanel>
+//                 {/* <Topbar title={"Notifications"} handleSidebar={handleSidebar} /> */}
+//               <section className="notificaton-page">
+//                 <DeshboardContent  />
+//               </section>
+//             </TabPanel>
+
+//             <TabPanel>
+//                 {/* <Topbar handleSidebar={handleSidebar} /> */}
+//               <section className="add-balance-setion">
+//                 <AddBalance />
+//               </section>
+//             </TabPanel>
+
+//             <TabPanel>
+//                 {/* <Topbar title={"Transaction History"} handleSidebar={handleSidebar} /> */}
+//               <section>
+//                 <DeshboardContent theading={TransactionHeading} tbody={TransactionsDetails} />
+//               </section>
+//             </TabPanel>
+
+//             <TabPanel>
+//               logout page
+//             </TabPanel>
