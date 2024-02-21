@@ -1,4 +1,3 @@
-"use client"
 
 import React from 'react'
 import Table from './Components/CommonTable/Table';
@@ -7,12 +6,12 @@ import OfferSection from './Components/OfferSection/OfferSection';
 import Carousel from './Components/Slider/Slide';
 
 
-export const  metaData ={
-  title:"Page title",
-  description:"description"
-
+export const metaData ={
+  title:"Best Topup offers",
+  descripton:"Your Best Topup service is here..."
 }
-  
+
+
 export default function page() {
 
     const heading = ['প্যাকেজসমূহ',	'স্টাটাস',	"ক্রয় হয়েছে",	'রেগুলার দাম',	'মোবাইল নাম্বার'];

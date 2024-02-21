@@ -8,7 +8,7 @@ import Footer from "./Components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Your Offer list",
+  title: "Tong Topup offer service",
    description:"this is an affer providing site for Telicommunication system."
 }
 

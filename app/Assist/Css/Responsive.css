@@ -332,7 +332,8 @@
     }
 
     .Dashboard-page .add-balance {
-        width: 90%;
+        width: 95%;
+        padding:25px 10px;
     }
 
     /* .Dashboard-page .left-sitebar {
@@ -352,7 +353,7 @@
     }
 
     .Dashboard-page .page-title h3 {
-        font-size: 16px;
+        font-size: 18px !important;
         font-weight: 600;
     }
 
@@ -371,7 +372,19 @@
     .Dashboard-page .heading h6 {
         font-size: 14px;
     }
-
+    .Dashboard-page .add-balance h3{
+        font-size:17px !important;
+        font-weight:600;
+    }
+    .react-tabs__tab-panel--selected{
+        padding:25px 15px !important;
+    }
+    .react-tabs__tab-panel {
+         padding: 10px;
+    }
+    .Dashboard-page .add-balance form input{
+        font-size:14px;
+    }
 
     footer p {
         font-size: 14px;

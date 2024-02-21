@@ -9,12 +9,10 @@ export default function AddBalance() {
                 <label>Your Account Number</label>
                 <input type="number" placeholder="type your Bkash No"  />
             </span>
-            <br/>
             <span>
                 <label>Enter your Amount</label>
                 <input type="number" placeholder="Write Money Amount"  />
             </span>
-            <br/>
             <span>
                 <input type="submit" value="Deposit Balance" />
             </span>

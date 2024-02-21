@@ -729,8 +729,10 @@ footer {
 
 .Dashboard-page .add-balance form span {
     width: 90%;
-    margin: 15px auto;
-    padding: 20px 0;
+    margin: 0px auto;
+}
+.Dashboard-page .add-balance form {
+    margin: 0px auto;
 }
 
 .Dashboard-page .add-balance form input {
