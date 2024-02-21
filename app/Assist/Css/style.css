@@ -82,8 +82,8 @@ h6 {
 
 /* navigation bar styles */
 .navbar-area {
-    background-color: black;
-    color: white;
+    background-color: rgb(230, 230, 230);
+    color: rgb(0, 0, 0);
 
 }
 
@@ -272,6 +272,7 @@ table tr td:last-child {
 }
 
 table tr td svg {
+    font-size: 20px !important;
     color: purple;
 }
 
@@ -348,11 +349,12 @@ table tr td a button {
 /* signup page */
 .login-area {
     width: 100%;
-    padding: 100px 0;
+    padding: 70px 0;
 }
 
 .login-area h3 {
-    font-size: 32px;
+    font-size: 24px;
+    text-transform:uppercase;
     font-weight: 700;
 }
 
@@ -366,12 +368,15 @@ table tr td a button {
 
 form {
     width: 100%;
-    margin: 0 auto;
-    display: block;
+    margin: 15px auto;
+    display: flex;
+    flex-direction:column;
+    gap:15px !important;
 }
 
 .login-area form input {
     width: 100%;
+    display:block;
     border: .5px solid #010101;
     margin: 5px 0;
     padding: 10px;
@@ -399,9 +404,7 @@ form span input[type="checkbox"] {
 }
 
 form span {
-    width: 50%;
-    padding: 15px 0;
-    margin: 10px 0;
+    width: 100%;
 }
 
 form span p {
@@ -619,6 +622,9 @@ footer {
     align-items: center;
     justify-content: space-between;
 }
+.Dashboard-page .heading svg{
+   cursor:pointer;
+}
 
 .Dashboard-page .heading .profile {
     display: flex;
@@ -627,6 +633,7 @@ footer {
 
 .Dashboard-page .profile svg {
     font-size: 30px;
+    cursor:pointer;
 }
 
 .Dashboard-page .heading p {

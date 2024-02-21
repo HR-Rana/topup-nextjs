@@ -2,8 +2,7 @@ import Link from 'next/link';
 import React from 'react'
 import Button from '../Elements/Button';
 import { FaCheckDouble } from "react-icons/fa";
-import { IoMdTime } from "react-icons/io";
-
+import { MdAccessTime } from "react-icons/md";
 
 
 
@@ -46,7 +45,7 @@ export default function  Table({thead, tbody, offer}) {
                         <tr key={i}>
                             <td>{name}</td>
                             <td className='my-auto   items-center'> <span className="flex gap-1 items-center"><FaCheckDouble /> {status}</span> </td>
-                            <td><span className='flex gap-2 items-center'><IoMdTime /> {brought}</span> </td>
+                            <td><span className='flex gap-2 items-center'><MdAccessTime /> {brought}</span> </td>
                             <td>{price}</td>
                             <td>{mobile}</td>
                         </tr>
